@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-rswf
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-776-0014-tenant/ci10t-776-0014-app/devfile-sample-rswf@sha256:dedf6233ddab016d5b5624075ab72bf9b4942cf9658241a1b11e08dc322b4db6
+        name: my-nodejs
+        resources: {}
+status: {}
